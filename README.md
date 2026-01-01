@@ -72,15 +72,16 @@ Each assignment folder contains individual C programs named as `Q01.c`, `Q02.c`,
 
 ##  Assignment 5: Arrays
 
-1. Write a C program to read **5 integers** into an array and print them.
+1. Write a C program to read n elements into an array and calculate the sum and average of the elements.
 
-2. Write a C program to store **n numbers** in an array and find their **sum**.
 
-3. Write a C program to **delete an element** from a specified position in an array.
+2. Write a C program to read a string and check whether it is a palindrome or not.
 
-4. Write a C program to **search an element** in an array using **linear search**.
 
-5. Write a C program to **sort array elements** in **ascending order**.
+3. Write a C program to count the number of words in a given string.
+
+
+ 4. Write a C program to read two matrices and perform matrix addition using a 2-D array
 
 ---
 
