@@ -1,19 +1,26 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    int arr[50];
-    int n, i, sum = 0;
+    char str[100];
+    int i, length, flag = 1;
 
-    printf("Enter number of elements: ");
-    scanf("%d", &n);
+    printf("Enter a string: ");
+    scanf("%s", str);
 
-    printf("Enter %d numbers:\n", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-        sum = sum + arr[i];
+    length = strlen(str);
+
+    for(i = 0; i < length / 2; i++) {
+        if(str[i] != str[length - i - 1]) {
+            flag = 0;
+            break;
+        }
     }
 
-    printf("\nSum of array elements = %d", sum);
+    if(flag)
+        printf("\nThe string is a palindrome");
+    else
+        printf("\nThe string is not a palindrome");
 
     return 0;
 }
